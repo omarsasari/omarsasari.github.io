@@ -143,7 +143,7 @@ function mlCounter() {
 
         setTimeout(() => {
             updateCount(ctr, target);
-        }, 400);
+        }, 800);
     });
 
 }
