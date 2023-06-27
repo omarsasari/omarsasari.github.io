@@ -944,7 +944,7 @@ footer .social-media {
     color: var(--main-color-1);
 }
 /*----------1000px screens --------------------------*/
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
     .sub-heading {
         font-size: 0.75rem;
     }
@@ -981,7 +981,6 @@ footer .social-media {
     }
     .nav-link {
         font-size: 0.7rem;
-        margin: 0 0.6rem;
     }
     .showcase-area {
         padding: 100px 0;
@@ -1025,7 +1024,7 @@ footer .social-media {
     }
 }
 /*----------820px - 768px screens --------------------------*/
-@media (max-width: 820px) {
+@media (max-width: 768px) {
     :root {
         --section-padding: 4.5rem;
     }
@@ -1196,6 +1195,7 @@ footer .social-media {
     }
     .services .container {
         grid-template-columns: 1fr;
+        justify-items: center;
     }
     .services .text {
         margin: 1.5rem 0 0.5rem;
@@ -1204,6 +1204,7 @@ footer .social-media {
         margin-top: 3.5rem;
         column-gap: 1.5rem;
         row-gap: 3.5rem;
+        max-width: 600px;
     }
     .srv-card {
         padding: 1.8rem 1.7rem;
@@ -1243,7 +1244,7 @@ footer .social-media {
 /*----------500px screens --------------------------*/
 @media (max-width: 500px) {
     .container {
-        margin: 0 1rem;
+        padding: 0 1rem;
     }
     .showcase-area .square {
         display: none;
