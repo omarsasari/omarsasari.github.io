@@ -989,6 +989,10 @@ footer .social-media {
         grid-template-columns:  1fr 400px;
         height: 450px;
     }
+    .showcase-area .square {
+        left: 40%;
+        bottom: 25px;
+    }
     .skills-box {
         padding: 4rem;
     }
@@ -996,6 +1000,9 @@ footer .social-media {
         transform: scale(0.85);
     }
     .services .container {
+        column-gap: 2.5rem;
+    }
+    .contact .container {
         column-gap: 2.5rem;
     }
     .contact-form {
@@ -1116,6 +1123,8 @@ footer .social-media {
     .showcase-area .container {
         grid-template-columns: 1fr;
         height: revert;
+        justify-content: center;
+        row-gap: 4rem;
     }
     .showcase-image {
         min-height: revert;
@@ -1141,6 +1150,9 @@ footer .social-media {
     .showcase-area .square {
         left: 80%;
         top: 20%;
+    }
+    .about .container {
+        grid-template-columns: 1fr;
     }
     .about-grid {
         order: 3;
