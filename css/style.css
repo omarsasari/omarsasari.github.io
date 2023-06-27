@@ -915,7 +915,7 @@ textarea.form-input {
     top: 98%;
     transform: translate(-50%, -50%);
 }
-/*        Footer estilos     */
+/*        Footer estilos  <a href="#" class="btn secondary-btn">Explore info.</a>   */ 
 footer {
     padding: 4rem 0;
 }
@@ -1242,7 +1242,7 @@ footer .social-media {
 /*----------500px screens --------------------------*/
 @media (max-width: 500px) {
     .container {
-        padding: 0 1rem;
+        
     }
     .showcase-area .square {
         display: none;
