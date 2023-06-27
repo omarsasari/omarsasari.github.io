@@ -854,6 +854,7 @@ body.open .hamburger .bar:last-child {
     padding: 3.5rem 3rem;
     display: flex;
     flex-direction: column;
+    transition: 0.3s ease-in-out;
 }
 .contact-form h3 {
     color: var(--heading-color);
@@ -861,6 +862,14 @@ body.open .hamburger .bar:last-child {
     font-weight: 500;
     margin-bottom: 1.6rem;
     line-height: 0.9;
+}
+.msn-form {
+    display: none;
+    background-color: green;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 2rem;
+    transition: 0.3s ease-in-out;
 }
 .form-input {
     display: inline-block;

@@ -20,6 +20,56 @@ const toggle_btn = document.querySelector(".toggle-btn");
 
 const hamburger =document.querySelector(".hamburger");
 
+/* Para el formulario const */
+const firebaseConfig = {
+    apiKey: "AIzaSyB12qucS5fJmW3RTfgACvH1RcOwVvIN8T4",
+    authDomain: "contact-form-omar.firebaseapp.com",
+    databaseURL: "https://contact-form-omar-default-rtdb.firebaseio.com",
+    projectId: "contact-form-omar",
+    storageBucket: "contact-form-omar.appspot.com",
+    messagingSenderId: "25310925473",
+    appId: "1:25310925473:web:dfa81b818da086efaa56e0"
+  };
+  //inicializacion
+  firebase.initializeApp(firebaseConfig);
+  //referencia firebase
+  var contactFormDB = firebase.database().ref('contact-form-omar');
+
+  document.getElementById("contactform").addEventListener("submit", submitForm);
+
+  function submitForm(e){
+    e.preventDefault();
+    var nameid = getElementVal("nameid");
+    var emailid = getElementVal("emailid");
+    var msgContent = getElementVal("msgContent");
+
+    saveMessages(nameid, emailid, msgContent);
+
+// mostrar mensaje de envio correcto
+    document.querySelector('.msn-form').style.display = 'block';
+    document.querySelector('.form-msg').style.display = 'none';
+// remover el mensaje de envio correcto
+    setTimeout(() => {
+        document.querySelector('.msn-form').style.display = 'none';
+        document.querySelector('.form-msg').style.display = 'flex';
+    }, 5000);
+// reset el formulario
+    document.getElementById("contactform").reset();
+  }
+  const saveMessages = (nameid, emailid, msgContent) => {
+    var newContactForm = contactFormDB.push();
+
+    newContactForm.set ({
+        nameid: nameid,
+        emailid: emailid,
+        msgContent: msgContent,
+    });
+  }
+  const getElementVal = (id) => {
+    return document.getElementById(id).value;
+  }
+
+// scroll y contadores
 window.addEventListener("scroll", () => {
     activeLink();
     if (!skillsPlayed) skillsCounter();
