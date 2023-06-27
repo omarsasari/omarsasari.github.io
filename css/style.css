@@ -1271,6 +1271,7 @@ footer .social-media {
     .srv-card {
         transform: none !important;
         min-height: auto;
+        padding: 1.3rem;
     }
     .portfolio-header {
         flex-direction: column;
