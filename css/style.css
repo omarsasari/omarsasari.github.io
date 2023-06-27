@@ -1023,8 +1023,8 @@ footer .social-media {
         font-size: 0.7rem;
     }
 }
-/*----------768px screens --------------------------*/
-@media (max-width: 768px) {
+/*----------820px - 768px screens --------------------------*/
+@media (max-width: 820px) {
     :root {
         --section-padding: 4.5rem;
     }
@@ -1242,7 +1242,7 @@ footer .social-media {
 /*----------500px screens --------------------------*/
 @media (max-width: 500px) {
     .container {
-        
+        margin: 0 1rem;
     }
     .showcase-area .square {
         display: none;
