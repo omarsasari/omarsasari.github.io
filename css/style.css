@@ -222,6 +222,7 @@ header.scrolled .logo {
     cursor: pointer;
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.05);
     transition: 0.3s;
+    margin-right: 1rem;
 }
 .toggle-btn:hover {
     filter: brightness(97%);
@@ -354,6 +355,7 @@ body.open .hamburger .bar:last-child {
     left: 0;
     top: 80%;
     transform: translate(-50%, -50%);
+    opacity: 0.5;
 }
 .showcase-area .dots {
     position: absolute;
