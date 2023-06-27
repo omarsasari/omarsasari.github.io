@@ -944,7 +944,7 @@ footer .social-media {
     color: var(--main-color-1);
 }
 /*----------1000px screens --------------------------*/
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .sub-heading {
         font-size: 0.75rem;
     }
@@ -981,6 +981,7 @@ footer .social-media {
     }
     .nav-link {
         font-size: 0.7rem;
+        margin: 0 0.6rem;
     }
     .showcase-area {
         padding: 100px 0;
