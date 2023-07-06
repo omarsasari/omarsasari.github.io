@@ -1309,6 +1309,9 @@ footer .social-media {
     .contact-form p {
         font-size: 1.2rem;
     }
+    .contact .square {
+       display: none;
+    }
     .sub-box {
         padding: 3rem 2.2rem;
         row-gap: 0.5rem;
