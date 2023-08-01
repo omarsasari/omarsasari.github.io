@@ -155,7 +155,9 @@ nav.container {
     align-items: center;
     flex-wrap: wrap;
 }
-
+nav.container img {
+    display: none;
+}
 .logo span {
     color: var(--main-color-1);
 }
